@@ -27,8 +27,5 @@ public class cartones {
                 System.out.println();
             }
 
-        }
-
-    }
     }
 }
