@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class cartones {
+public class Bingo {
 
     public static void main(String[] args) {
         // Variables
