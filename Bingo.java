@@ -1,11 +1,12 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Bingo {
 
     public static void main(String[] args) {
         // Variables
         Scanner input = new Scanner(System.in);
-        int cartones;
+        int cartones, cont=0;
 
         System.out.println("Introduzca el número de cartones que desea: ");
         cartones = input.nextInt();
@@ -23,6 +24,12 @@ public class Bingo {
                     CartonesNumeros[i][j] = (int)(1+Math.random()*90);
 
                    System.out.printf("%3d ",CartonesNumeros[i][j]);
+                     cont++;
+                        if (cont==5){
+                        System.out.println();
+
+                            cont=0;
+                        }
                 }
                 System.out.println();
             }
